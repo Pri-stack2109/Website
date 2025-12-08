@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Green Future</title>
+  <link rel="stylesheet" href="./styles/site.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  
+  <header>
+    <img src="./images/logo.png.png" alt="Two hands gently holding a green and blue Earth." width="100" height="60">
+    <h1>Green Future</h1>
+    <p>Understanding the impact of our consumption habits on the planet</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-hero">
+      <h2>Get In Touch With Us</h2>
+      <p class="hero-text">
+        Have questions, ideas, or want to join our mission? We're here to help and would love to connect with you. Whether you're interested in volunteering, partnering with us, or simply learning more, reach out today!
+      </p>
+    </section>
+
+    <section class="contact-options">
+      <h3>How Can We Help You?</h3>
+      <div class="contact-cards">
+        <article class="contact-card">
+          <h4>📧 General Inquiries</h4>
+          <p><a href="mailto:info@greenfuture.org">info@greenfuture.org</a></p>
+          <p>For general questions about our organization and programs</p>
+        </article>
+        <article class="contact-card">
+          <h4>🤝 Volunteer & Partnerships</h4>
+          <p><a href="mailto:volunteer@greenfuture.org">volunteer@greenfuture.org</a></p>
+          <p>Join our team or collaborate with us on projects</p>
+        </article>
+        <article class="contact-card">
+          <h4>📰 Media & Press</h4>
+          <p><a href="mailto:press@greenfuture.org">press@greenfuture.org</a></p>
+          <p>Media inquiries and interview requests</p>
+        </article>
+        <article class="contact-card">
+          <h4>📞 Phone</h4>
+          <p><a href="tel:+11234567890">+1 (123) 456-7890</a></p>
+          <p>Available Monday - Friday, 9 AM - 5 PM EST</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="office-hours">
+      <h3>Office Hours & Availability</h3>
+      <table class="hours-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+            <th>Services Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>9:00 AM - 5:00 PM EST</td>
+            <td>All services, phone support</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00 AM - 2:00 PM EST</td>
+            <td>Email support only</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+            <td>Emergency email monitored</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="response-times">
+      <h3>Expected Response Times</h3>
+      <table class="response-table">
+        <thead>
+          <tr>
+            <th>Contact Method</th>
+            <th>Response Time</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>24-48 hours</td>
+            <td>Detailed inquiries, documentation</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>Immediate during office hours</td>
+            <td>Urgent questions, quick answers</td>
+          </tr>
+          <tr>
+            <td>Contact Form</td>
+            <td>1-3 business days</td>
+            <td>General questions, feedback</td>
+          </tr>
+          <tr>
+            <td>Social Media</td>
+            <td>2-5 business days</td>
+            <td>Community engagement, updates</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact-form-section">
+      <h3>Send Us a Message</h3>
+      <p class="form-intro">Fill out the form below and our team will get back to you as soon as possible.</p>
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (Optional)</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="inquiryType">Inquiry Type</label>
+        <select id="inquiryType" name="inquiryType" required>
+          <option value="">Select an option</option>
+          <option value="volunteer">Volunteer Opportunities</option>
+          <option value="partnership">Partnership Inquiry</option>
+          <option value="donation">Donation Question</option>
+          <option value="event">Event Information</option>
+          <option value="feedback">Feedback/Suggestion</option>
+          <option value="media">Media Inquiry</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Brief description" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="newsletter" value="yes">
+          Subscribe to our monthly newsletter for updates and environmental tips
+        </label>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="locations">
+      <h3>Our Locations</h3>
+      <div class="location-grid">
+        <article class="location-card">
+          <h4>Global Headquarters</h4>
+          <p>123 Green Street<br>Earth City, EC 12345<br>United States</p>
+        </article>
+        <article class="location-card">
+          <h4>European Office</h4>
+          <p>45 Eco Avenue<br>Green Town, GT 67890<br>Europe</p>
+        </article>
+        <article class="location-card">
+          <h4>Asia-Pacific Office</h4>
+          <p>78 Sustainability Road<br>Eco City, EC 54321<br>Asia-Pacific</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-connect">
+      <h3>Connect With Us on Social Media</h3>
+      <p>Join our community and stay updated on environmental initiatives, cleanup events, and sustainability tips.</p>
+      <div class="social-grid">
+        <a href="#" class="social-link facebook">
+          <span class="social-icon">📘</span>
+          <span class="social-name">Facebook</span>
+          <span class="social-handle">@GreenFutureOrg</span>
+        </a>
+        <a href="#" class="social-link instagram">
+          <span class="social-icon">📸</span>
+          <span class="social-name">Instagram</span>
+          <span class="social-handle">@GreenFutureOrg</span>
+        </a>
+        <a href="#" class="social-link twitter">
+          <span class="social-icon">🐦</span>
+          <span class="social-name">Twitter</span>
+          <span class="social-handle">@GreenFuture</span>
+        </a>
+        <a href="#" class="social-link linkedin">
+          <span class="social-icon">💼</span>
+          <span class="social-name">LinkedIn</span>
+          <span class="social-handle">Green Future Initiative</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="faq-contact">
+      <h3>Frequently Asked Questions</h3>
+      <details class="faq-item">
+        <summary>How quickly will I receive a response?</summary>
+        <p>We aim to respond to all inquiries within 24-48 hours during business days. Urgent matters are prioritized.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I visit your office in person?</summary>
+        <p>Yes! We welcome visitors by appointment. Please email us at least 48 hours in advance to schedule a visit.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can I volunteer with Green Future?</summary>
+        <p>Email volunteer@greenfuture.org or fill out our contact form selecting "Volunteer Opportunities" as your inquiry type.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you offer internships or career opportunities?</summary>
+        <p>Yes! Check our website regularly for openings or contact us directly to express your interest.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer id="contactFooter">
+    <h2>Contact Info</h2>
+    <p>Email: info@greenfuture.org</p>
+    <p>Phone: +1 123 456 7890</p>
+    <p>&copy; 2025 Green Future Initiative</p>
+  </footer>
+ <nav class="button-nav">
+    <ul>
+      <li><a href="index.html" class="button">Home</a></li>
+      <li><a href="donate.html" class="button">Donate</a></li>
+      <li><a href="solutions.html" class="button">Solutions</a></li>
+      <li><a href="aboutUs.html" class="button">About Us</a></li>
+      <li><a href="contactUS.html" class="button">Contact Us</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate - Green Future</title>
+  <link rel="stylesheet" href="styles/site.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  
+  <header>
+    <img src="./images/logo.png.png" alt="Two hands gently holding a green and blue Earth." width="100" height="60">
+    <h1>Green Future</h1>
+    <p>Supporting environmental action and community well-being world-wide</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section class="stats-panel">
+      <div class="stat-card">
+        <span class="stat-value">56+</span>
+        <span class="stat-label">Cleanup Events</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">2,300</span>
+        <span class="stat-label">Volunteers</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">400,000 kg</span>
+        <span class="stat-label">Waste Removed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value">18</span>
+        <span class="stat-label">Countries</span>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3>Donor and Volunteer Stories</h3>
+      <blockquote>
+        "I donated to Green Future and saw real impact in my community's river park. The quarterly reports are amazing!"
+        <br>- Mark L.
+      </blockquote>
+      <blockquote>
+        "I volunteered at a tree-planting event. The support from donations provided all the tools and lunch for the day!"
+        <br>- Angelica R.
+      </blockquote>
+    </section>
+
+    <section class="donate-section">
+      <h2>Support a Cleaner Planet</h2>
+      <p>Your donation directly supports environmental cleanup campaigns and educational outreach worldwide.</p>
+      <ul>
+        <li>Financial assistance for volunteer cleanup and sustainability campaigns.</li>
+        <li>Detailed transparency on how aid is administered and used.</li>
+        <li>All contributors receive quarterly progress updates and impact reports.</li>
+      </ul>
+
+      <div class="donation-amount">
+        <h3>Select Donation Amount</h3>
+        <div class="amount-buttons">
+          <button class="amount-btn" data-amount="25">$25</button>
+          <button class="amount-btn" data-amount="50">$50</button>
+          <button class="amount-btn" data-amount="100">$100</button>
+          <button class="amount-btn" data-amount="250">$250</button>
+          <input type="number" id="customAmount" placeholder="Custom amount" min="1">
+        </div>
+      </div>
+
+      <div class="payment-methods">
+        <h3>Choose Payment Method</h3>
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="payment" value="card" checked>
+            <span class="payment-label">💳 Credit/Debit Card</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="paypal">
+            <span class="payment-label">🅿️ PayPal</span>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" value="venmo">
+            <span class="payment-label">💰 Venmo</span>
+          </label>
+        </div>
+      </div>
+
+      <form class="donation-form">
+        <h3>Payment Details</h3>
+        
+        <label for="cardName">Name on Card</label>
+        <input type="text" id="cardName" name="cardName" placeholder="John Doe" required>
+        
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry">Expiration Date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
+          </div>
+        </div>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+        
+        <label for="message">Message or Dedication (Optional)</label>
+        <textarea id="message" name="message" rows="3" placeholder="Leave a message or honor someone"></textarea>
+        
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+
+      <div class="security-note">
+        🔒 Your payment information is secure and encrypted. We never store your card details.
+      </div>
+
+      <p><a href="pdf/annual-report.pdf">Download Our 2025 Annual Report (PDF)</a></p>
+    </section>
+
+    <section class="video-section">
+  <h3>Watch Our Impact</h3>
+  <p>See how your donation changes lives and landscapes</p>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+      title="Green Future Impact Video" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+   
+
+    <section class="faq">
+      <h3>Frequently Asked Questions</h3>
+      <dl>
+        <dt>Are donations tax-deductible?</dt>
+        <dd>Yes, in many countries. Please check your local laws.</dd>
+        <dt>How do I get updates on my impact?</dt>
+        <dd>We email quarterly impact reports and stories to donors.</dd>
+        <dt>Can I donate in honor of someone?</dt>
+        <dd>Yes! Use the message field to specify your dedication.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: info@greenfuture.org</p>
+    <p>Phone: +1 123 456 7890</p>
+    <p>&copy; 2025 Green Future Initiative</p>
+  </footer>
+ <nav class="button-nav">
+    <ul>
+      <li><a href="index.html" class="button">Home</a></li>
+      <li><a href="donate.html" class="button">Donate</a></li>
+      <li><a href="solutions.html" class="button">Solutions</a></li>
+      <li><a href="aboutUs.html" class="button">About Us</a></li>
+      <li><a href="contactUS.html" class="button">Contact Us</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
