@@ -13,6 +13,7 @@
     <img src="./images/logo.png.png" alt="Two hands gently holding a green and blue Earth." width="100" height="60">
     <h1>Green Future</h1>
     <p>Understanding the impact of our consumption habits on the planet</p>
+    <p class="domain-name">www.greenfutureinitiative.ca</p>
   </header>
 
   <nav>
@@ -59,137 +60,106 @@
       </div>
     </section>
 
-    <section class="office-hours">
-      <h3>Office Hours & Availability</h3>
-      <table class="hours-table">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Hours</th>
-            <th>Services Available</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday - Friday</td>
-            <td>9:00 AM - 5:00 PM EST</td>
-            <td>All services, phone support</td>
-          </tr>
-          <tr>
-            <td>Saturday</td>
-            <td>10:00 AM - 2:00 PM EST</td>
-            <td>Email support only</td>
-          </tr>
-          <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-            <td>Emergency email monitored</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <form class="contact-form" action="#" method="post">
 
-    <section class="response-times">
-      <h3>Expected Response Times</h3>
-      <table class="response-table">
-        <thead>
-          <tr>
-            <th>Contact Method</th>
-            <th>Response Time</th>
-            <th>Best For</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Email</td>
-            <td>24-48 hours</td>
-            <td>Detailed inquiries, documentation</td>
-          </tr>
-          <tr>
-            <td>Phone</td>
-            <td>Immediate during office hours</td>
-            <td>Urgent questions, quick answers</td>
-          </tr>
-          <tr>
-            <td>Contact Form</td>
-            <td>1-3 business days</td>
-            <td>General questions, feedback</td>
-          </tr>
-          <tr>
-            <td>Social Media</td>
-            <td>2-5 business days</td>
-            <td>Community engagement, updates</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+  </div>
 
-    <section class="contact-form-section">
-      <h3>Send Us a Message</h3>
-      <p class="form-intro">Fill out the form below and our team will get back to you as soon as possible.</p>
-      <form class="contact-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required>
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
-          </div>
-        </div>
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
+  <label for="phone">Phone Number (Optional)</label>
+  <input type="tel" id="phone" name="phone">
 
-        <label for="phone">Phone Number (Optional)</label>
-        <input type="tel" id="phone" name="phone">
+  
+  <fieldset class="form-fieldset">
+    <legend>Preferred Contact Method</legend>
 
-        <label for="inquiryType">Inquiry Type</label>
-        <select id="inquiryType" name="inquiryType" required>
-          <option value="">Select an option</option>
-          <option value="volunteer">Volunteer Opportunities</option>
-          <option value="partnership">Partnership Inquiry</option>
-          <option value="donation">Donation Question</option>
-          <option value="event">Event Information</option>
-          <option value="feedback">Feedback/Suggestion</option>
-          <option value="media">Media Inquiry</option>
-          <option value="other">Other</option>
-        </select>
+    <label class="inline-option">
+      <input type="radio" name="contactMethod" value="email" required>
+      Email
+    </label>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Brief description" required>
+    <label class="inline-option">
+      <input type="radio" name="contactMethod" value="phone">
+      Phone
+    </label>
+  </fieldset>
 
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+ 
+  <fieldset class="form-fieldset">
+    <legend>I would like more information about:</legend>
 
-        <label class="checkbox-label">
-          <input type="checkbox" name="newsletter" value="yes">
-          Subscribe to our monthly newsletter for updates and environmental tips
-        </label>
+    <label class="inline-option">
+      <input type="checkbox" name="infoTopics" value="volunteering">
+      Volunteering
+    </label>
 
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </section>
+    <label class="inline-option">
+      <input type="checkbox" name="infoTopics" value="donations">
+      Donations
+    </label>
 
-    <section class="locations">
-      <h3>Our Locations</h3>
-      <div class="location-grid">
-        <article class="location-card">
-          <h4>Global Headquarters</h4>
-          <p>123 Green Street<br>Earth City, EC 12345<br>United States</p>
-        </article>
-        <article class="location-card">
-          <h4>European Office</h4>
-          <p>45 Eco Avenue<br>Green Town, GT 67890<br>Europe</p>
-        </article>
-        <article class="location-card">
-          <h4>Asia-Pacific Office</h4>
-          <p>78 Sustainability Road<br>Eco City, EC 54321<br>Asia-Pacific</p>
-        </article>
-      </div>
-    </section>
+    <label class="inline-option">
+      <input type="checkbox" name="infoTopics" value="events">
+      Events
+    </label>
 
+    <label class="inline-option">
+      <input type="checkbox" name="infoTopics" value="partnerships">
+      Partnerships
+    </label>
+
+    <label class="inline-option">
+      <input type="checkbox" name="infoTopics" value="education">
+      Workshops / Education
+    </label>
+  </fieldset>
+
+  <label for="foundUs">How did you find out about us?</label>
+  <select id="foundUs" name="foundUs" required>
+    <option value="">Select one</option>
+
+    <optgroup label="Internet">
+      <option value="search-engine">Search Engine (Google, Yahoo, etc.)</option>
+      <option value="social-media">Social Media</option>
+      <option value="website-link">Link from another website</option>
+    </optgroup>
+
+    <optgroup label="Non-Internet">
+      <option value="friend">Referred by a friend</option>
+      <option value="advertisement">Advertisement</option>
+      <option value="flyer-mailing">Flyer / Mailing</option>
+      <option value="event">Community Event</option>
+    </optgroup>
+  </select>
+
+  <label for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" placeholder="Brief description" required>
+
+  <label for="message">Enter any additional questions you have:</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+ 
+  <button type="submit" class="submit-btn">Submit</button>
+  <button type="reset" class="submit-btn">Cancel</button>
+</form>
+
+   
+
+   
+
+        
+
+   
     <section class="social-connect">
       <h3>Connect With Us on Social Media</h3>
       <p>Join our community and stay updated on environmental initiatives, cleanup events, and sustainability tips.</p>
@@ -240,7 +210,7 @@
 
   <footer id="contactFooter">
     <h2>Contact Info</h2>
-    <p>Email: info@greenfuture.org</p>
+    <p>Email: info@greenfutureinitiative.ca</p>
     <p>Phone: +1 123 456 7890</p>
     <p>&copy; 2025 Green Future Initiative</p>
   </footer>
@@ -250,7 +220,7 @@
       <li><a href="donate.html" class="button">Donate</a></li>
       <li><a href="solutions.html" class="button">Solutions</a></li>
       <li><a href="aboutUs.html" class="button">About Us</a></li>
-      <li><a href="contactUS.html" class="button">Contact Us</a></li>
+      <li><a href="contactUs.html" class="button">Contact Us</a></li>
     </ul>
   </nav>
 </body>
